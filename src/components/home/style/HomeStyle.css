@@ -1,0 +1,20 @@
+.home .container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .container .main {
+  text-align: center;
+}
+.home .container .main h1 {
+  font-size: 14rem;
+  margin: 0;
+}
+.home .container .main .box-btn {
+  display: flex;
+  justify-content: center;
+}
+.home .container .main .box-btn button {
+  margin: 0 1rem;
+}/*# sourceMappingURL=HomeStyle.css.map */

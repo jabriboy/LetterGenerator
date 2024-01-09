@@ -1,0 +1,25 @@
+.home{
+	.container{
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.main{
+			text-align: center;
+			h2{
+
+			}
+			h1{
+				font-size: 14rem;
+				margin: 0;
+			}
+			.box-btn{
+				display: flex;
+				justify-content: center;
+				button{
+					margin: 0 1rem;
+				}
+			}
+		}
+	}
+}
