@@ -1,6 +1,6 @@
 .home{
 	.container{
-		height: 80vh;
+		height: 75vh;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -24,5 +24,6 @@
 	}
 	p{
 		opacity: 30%;
+		margin-left: .5rem;
 	}
 }

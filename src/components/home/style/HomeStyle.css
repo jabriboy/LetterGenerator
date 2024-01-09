@@ -1,5 +1,5 @@
 .home .container {
-  height: 80vh;
+  height: 75vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,4 +23,5 @@
 }
 .home p {
   opacity: 30%;
+  margin-left: 0.5rem;
 }/*# sourceMappingURL=HomeStyle.css.map */
