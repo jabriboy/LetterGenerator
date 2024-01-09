@@ -40,6 +40,8 @@ function Home(){
 						</div>
 					</div>
 				</div>
+				<p>feito por: Gabriel Rocha</p>
+				<p>github: <a href="https://github.com/jabriboy/LetterGenerator">https://github.com/jabriboy/LetterGenerator</a></p>
 			</div>
 		</>
 	)

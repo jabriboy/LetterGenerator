@@ -1,6 +1,6 @@
 .home{
 	.container{
-		height: 90vh;
+		height: 85vh;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -10,6 +10,9 @@
 				font-size: 14rem;
 				margin: 0;
 			}
+			p{
+				opacity: 100%;
+			}
 			.box-btn{
 				display: flex;
 				justify-content: center;
@@ -18,5 +21,8 @@
 				}
 			}
 		}
+	}
+	p{
+		opacity: 50%;
 	}
 }
