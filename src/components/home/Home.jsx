@@ -7,8 +7,22 @@ function Home(){
 	const [auxAlfabeto, setauxAlfabeto] = useState(alfabeto)
 	const [letra, setletra] = useState('-')
 	const [contador, setContador] = useState(0)
+	const [loading, setLoading] = useState(false)
 
-	const gerar = () => {
+	function delay(ms) {
+		return new Promise(resolve => setTimeout(resolve, ms));
+	}
+
+	const gerar = async () => {
+		setLoading(true)
+		setletra('3')
+		await delay(1000);
+		setletra('2')
+		await delay(1000);
+		setletra('1')
+		await delay(1000);
+		setletra('...')
+		await delay(1000);
 		if(auxAlfabeto.length == 0){
 			setletra('acabou');
 		}
@@ -18,12 +32,16 @@ function Home(){
 			setauxAlfabeto(auxAlfabeto.filter(e => e !== auxAlfabeto[indiceAleatorio]))
 			setContador(contador+1)
 		}
+		setLoading(false)
 	}
 
 	const reset = () => {
-		setauxAlfabeto(alfabeto)
-		setletra('-')
-		setContador(0)
+		const result = window.confirm('Você tem certeza que deseja reiniciar?');
+		if(result){
+			setauxAlfabeto(alfabeto)
+			setletra('-')
+			setContador(0)
+		}
 	}
 
 	return(
@@ -34,14 +52,16 @@ function Home(){
 						<h2>Gerador de letras para Salada de frutas/Stop</h2>
 						<h1>{letra}</h1>
 						<p>contador de letras: {contador}</p>
-						<div className="box-btn">
-							<button onClick={gerar}>gerar nova letra</button>
-							<button onClick={reset}>reset</button>
-						</div>
+						{loading ? "" : <div disabled={loading} onClick={gerar} className="btn-gerar">gerar nova letra</div>}
+						
+						<div onClick={reset} className="btn-reset">reset</div>
 					</div>
 				</div>
-				<p>feito por: Gabriel Rocha</p>
-				<p>github: <a href="https://github.com/jabriboy/LetterGenerator">https://github.com/jabriboy/LetterGenerator</a></p>
+				<p className="credits">
+					Desenvolvedor: Gabriel Rocha
+					<br />
+					GitHub: <a href="https://github.com/jabriboy/LetterGenerator">https://github.com/jabriboy/LetterGenerator</a>
+					</p>
 			</div>
 		</>
 	)

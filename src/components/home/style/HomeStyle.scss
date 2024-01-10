@@ -1,4 +1,8 @@
 .home{
+	position: relative;
+	height: 100vh;
+	background: #09003F;
+	color: #FFC700;
 	.container{
 		height: 75vh;
 		display: flex;
@@ -6,24 +10,111 @@
 		align-items: center;
 		.main{
 			text-align: center;
+			h2{
+				margin-bottom: -1rem;
+				margin-top: 4rem;
+				font-size: 2rem;
+			}
 			h1{
-				font-size: 14rem;
+				font-size: 16rem;
 				margin: 0;
+				color: white;
 			}
 			p{
 				opacity: 100%;
+				margin-top: -1rem;
+				margin-bottom: 3rem;
+				font-size: 1.2rem;
 			}
-			.box-btn{
-				display: flex;
-				justify-content: center;
-				button{
-					margin: 0 1rem;
-				}
+			.btn-gerar{
+				cursor: pointer;
+				color: #09003F;
+				background: #FFC700;
+				width: fit-content;
+				border-radius: 2.1875rem;
+				padding: .3rem 1.5rem;
+				margin: 0 auto;
+				text-transform: uppercase;
+				font-weight: bolder;
+
+				font-size: 1.5rem;
+			}
+			.btn-reset{
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				margin-bottom: 2rem;
+				margin-right: 2rem;
+				cursor: pointer;
+				color: #FFC700;
+				background: #FF0000;
+				width: fit-content;
+				border-radius: 2.1875rem;
+				padding: .3rem 1.5rem;
+				text-transform: uppercase;
+				font-weight: bolder;
+
+				font-size: 1.2rem;
 			}
 		}
 	}
-	p{
-		opacity: 30%;
-		margin-left: .5rem;
+	.credits{
+		opacity: 25%;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		margin-bottom: 2rem;
+		margin-left: 2rem;
+		a{
+			color: #FFC700;
+		}
+	}
+}
+
+@media screen and (max-width: 600px) and (min-height: 500px){
+	.home{
+		.container{
+			margin: 0 2rem;
+			.main{
+				.btn-reset{
+					position: relative;
+					margin: 0 auto;
+					margin-top: 1rem;
+				}
+			}
+		}
+		.credits{
+			font-size: .8rem;
+		}
+	}
+}
+
+@media screen and (max-width: 999px) and (orientation: landscape) {
+	.home{
+		.container{
+			margin: 0 2rem;
+			.main{
+				h2{
+					margin-top: 2rem;
+					font-size: 1.5rem;
+				}
+				h1{
+					font-size: 10rem;
+				}
+				p{
+					margin-bottom: 1rem;
+					font-size: 1rem;
+				}
+				.btn-reset{
+					font-size: 1rem;
+				}
+				.btn-gerar{
+					font-size: 1rem
+				}
+			}
+		}
+		.credits{
+			font-size: .8rem;
+		}
 	}
 }
