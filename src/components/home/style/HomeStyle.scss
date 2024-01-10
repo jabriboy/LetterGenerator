@@ -37,7 +37,7 @@
 				text-transform: uppercase;
 				font-weight: bolder;
 
-				font-size: 1.5rem;
+				font-size: 1.3rem;
 			}
 			.btn-reset{
 				position: absolute;
@@ -71,7 +71,7 @@
 	}
 }
 
-@media screen and (max-width: 600px) and (min-height: 500px){
+@media screen and (max-width: 600px){
 	.home{
 		.container{
 			margin: 0 2rem;
@@ -85,6 +85,7 @@
 		}
 		.credits{
 			font-size: .8rem;
+			bottom: 5%;
 		}
 	}
 }

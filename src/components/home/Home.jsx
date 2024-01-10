@@ -61,7 +61,7 @@ function Home(){
 					Desenvolvedor: Gabriel Rocha
 					<br />
 					GitHub: <a href="https://github.com/jabriboy/LetterGenerator">https://github.com/jabriboy/LetterGenerator</a>
-					</p>
+				</p>
 			</div>
 		</>
 	)
